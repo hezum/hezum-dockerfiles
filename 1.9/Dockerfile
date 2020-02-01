@@ -11,7 +11,7 @@ RUN mix local.hex --force && \
 
 # Imagemagick
 RUN apt-get update \
-  && apt-get install -y ghostscript \
+  && apt-get install -y imagemagick libmagick++-dev \
   && rm -rf /var/lib/apt/lists/*
 
 # Ghostscript
